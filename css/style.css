@@ -1,0 +1,13 @@
+:root{
+    --ms-backgroud-grey: #e5e5e5;
+}
+
+.ms_bg_grey{
+    background-color: var(--ms-backgroud-grey);
+}
+
+.dropstart .ms_dropdown{
+    position: absolute;
+    top: 100% !important;
+    right: 0 !important; 
+}
