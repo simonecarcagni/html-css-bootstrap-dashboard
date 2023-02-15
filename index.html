@@ -17,7 +17,8 @@
                 <div class="container-fluid p-0">
                     <div class="bg-white">
                         <a class="navbar-brand">
-                            Brand Img
+                            <img class="ms_logo_big" src="./img/logo.svg" alt="Bolean logo">
+                            <img class="ms_logo_small" src="./img/mobile-logo.png" alt="Logo Small">
                         </a>
                     </div>
 
@@ -31,16 +32,18 @@
                         </div>
                     </form>
 
-                    <div class="bg-white d-flex px-2">
-                        <button type="button" class="btn text-secondary border-0 ">
-                            <i class="bi bi-list-ul"></i>
-                        </button>
-                        <button type="button" class="btn text-secondary border-0">
-                            <i class="bi bi-question-circle-fill"></i>
-                        </button>
-                        <button type="button" class="btn text-secondary border-0">
-                            <i class="bi bi-three-dots-vertical"></i>
-                        </button>
+                    <div class="bg-white d-flex px-2 ">
+                        <div class="ms_hidden">
+                            <button type="button" class="btn text-secondary border-0">
+                                <i class="bi bi-list-ul ms_button_hidden"></i>
+                            </button>
+                            <button type="button" class="btn text-secondary border-0">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </button>
+                            <button type="button" class="btn text-secondary border-0">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                        </div>
                         
                         <div class="dropstart">
                             
@@ -68,21 +71,35 @@
             <div class="d-flex h-100">
 
             <aside class="d-flex flex-column flex-wrap">
-                <div class="col-12 m-2"></div>
-                <div class="col-12 m-2"></div>
-                <div class="col-12 m-2"></div>
-                <div class="col-12 mx-2 mt-auto mb-2"></div>
+                <div class="col-12 my-2 text-white fs-5 ms-4">
+                    <i class="bi bi-house-door-fill me-1"></i>
+                    <span class="ms_hidden">Home</span>
+                </div>
+                <div class="col-12 my-2 text-white fs-5 ms-4">
+                    <i class="bi bi-bar-chart-fill me-1"></i>
+                    <span class="ms_hidden">Stats</span>
+                </div>
+                <div class="col-12 my-2 text-white fs-5 ms-4">
+                    <i class="bi bi-reception-4 me-1"></i>
+                    <span class="ms_hidden">Signals</span>
+                </div>
+                <div class="col-12 mt-auto mb-2 text-white fs-5 ms-4">
+                    <i class="bi bi-gear-fill me-1"></i>
+                    <span class="ms_hidden">Admin</span>
+                </div>
             </aside>
     
             <div class="container-fluid p-0 overflow-y-scroll ">
                 <div class="ms_header_main d-flex justify-content-around">
-                    <div class="col-3 m-auto"></div>
+                    <div class="col-3 m-auto">
+                        
+                    </div>
                     <div class="col-3 m-auto"></div>
                     <div class="col-3 m-auto"></div>
                 </div>
-                <div class="ms_bottom_main  d-flex">
-                    <div class="col-8 p-5">
-                        <div class="card w-100 my-3" style="width: 18rem;">
+                <div class="ms_bottom_main flex-wrap d-flex">
+                    <div class="col-12 col-md-8 px-3 ">
+                        <div class="card w-100 my-5" style="width: 18rem;">
                             <div class="card-header fs-2">
                                 Prossime Classi
                             </div>
@@ -90,9 +107,9 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th colspan="2">Nome</th>
-                                            <th scope="col" class="text-center">Data inizio</th>
-                                            <th scope="col" class="text-center">ROI</th>
+                                            <th colspan="4">Nome</th>
+                                            <th scope="col" class="text-center ms_hidden">Data inizio</th>
+                                            <th scope="col" class="text-center ms_hidden">ROI</th>
                                             <th scope="col" class="text-center">Stato</th>
                                             <th scope="col" class="text-center">Azioni</th>
                                         </tr>
@@ -100,9 +117,9 @@
                                     <tbody>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 75</td>
-                                            <td class="text-center align-middle">15 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 75</td>
+                                            <td class="text-center align-middle ms_hidden">15 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-success">Done</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -115,9 +132,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 76</td>
-                                            <td class="text-center align-middle">16 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 76</td>
+                                            <td class="text-center align-middle ms_hidden">16 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-warning text-white">Process</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -130,9 +147,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 77</td>
-                                            <td class="text-center align-middle">17 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 77</td>
+                                            <td class="text-center align-middle ms_hidden">17 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-success">Done</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -145,9 +162,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 78</td>
-                                            <td class="text-center align-middle">18 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 78</td>
+                                            <td class="text-center align-middle ms_hidden">18 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-danger">Failed</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -160,9 +177,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 79</td>
-                                            <td class="text-center align-middle">19 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 79</td>
+                                            <td class="text-center align-middle ms_hidden">19 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-success">Done</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -175,9 +192,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 80</td>
-                                            <td class="text-center align-middle">20 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 80</td>
+                                            <td class="text-center align-middle ms_hidden">20 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-danger">Failed</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -190,9 +207,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 81</td>
-                                            <td class="text-center align-middle">21 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 81</td>
+                                            <td class="text-center align-middle ms_hidden">21 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-success">Done</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -205,9 +222,9 @@
                                         </tr>
                                         <tr>
                                             <th class="ms_class_avatar" scope="row"></th>
-                                            <td colspan="1" class="align-middle">Classe 82</td>
-                                            <td class="text-center align-middle">22 Febbraio 2021</td>
-                                            <td class="text-center align-middle">20%</td>
+                                            <td colspan="3" class="align-middle">Classe 82</td>
+                                            <td class="text-center align-middle ms_hidden">22 Febbraio 2021</td>
+                                            <td class="text-center align-middle ms_hidden">20%</td>
                                             <td class="text-center align-middle"><span class="badge rounded-pill text-bg-success">Done</span></td>
                                             <td class="text-center align-middle">
                                                 <button type="button" class="btn btn-outline-secondary mx-1">
@@ -222,7 +239,7 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="card w-100 my-3" style="width: 18rem;">
+                        <div class="card w-100 my-5" style="width: 18rem;">
                             <div class="card-header fs-2">
                                 F.A.Q.
                             </div>
@@ -267,8 +284,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 p-5">
-                        <div class="card w-100 my-3" style="width: 18rem;">
+                    <div class="col-12 col-md-4 px-4">
+                        <div class="card w-100 my-5" style="width: 18rem;">
                             <div class="card-header fs-2">
                                 Todo
                             </div>
@@ -287,8 +304,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card w-100 my-3" style="width: 18rem;">
-                            <div class="card m-auto my-3" style="width: 28rem;">
+                        <div class="card w-100 p-3 my-5" style="width: 18rem;">
+                            <div class="card w-100 " style="width: 18rem;">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="Graphic">
                                 <div class="card-body">
                                     <h5 class="card-title">Utenti Attivi</h5>

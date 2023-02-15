@@ -19,7 +19,6 @@ html{
 .debug aside{
     background-color: #051e34;
     height: 100%;
-    width: 150px;
 }
 
 main {
@@ -29,18 +28,12 @@ main {
 
 .debug main .container-fluid{
     height: calc(100vh - 54px);
-    width: calc(100% - 150px);
 }
 
 .debug main .row {
     background-color: green;
 }
 
-.debug aside .col-12{
-    width: calc(100% - 16px);
-    background-color: black;
-    height: 50px;
-}
 
 .ms_header_main{
     background-color: #1b72e8;
@@ -48,9 +41,17 @@ main {
     width: 100%;
 }
 
+aside{
+    background-image: url(../img/sidebar-bg.png);
+}
+
 .debug main .col-3{
     background-color: black;
     height: 100px;
+}
+
+.ms_logo_small{
+    display: none;
 }
 
 
@@ -62,4 +63,44 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+
+
+
+@media all and (max-width: 576px) {
+    .ms_logo_small{
+        margin-left: 20px;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+    }
+
+    .ms_logo_big{
+        display: none;
+    }
+
+    .ms_hidden{
+        display: none;
+    }
+
+    aside{
+        width: 75px;
+    }
+
+    main .container-fluid{
+        width: calc(100% - 75px);
+    }
+
+}
+
+@media all and (min-width: 576px) {
+    aside {
+        width: 150px;
+    }
+
+    main .container-fluid {
+        width: calc(100% - 150px);
+    }
 }
