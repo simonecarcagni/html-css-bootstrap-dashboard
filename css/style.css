@@ -23,14 +23,12 @@ html{
 }
 
 main {
-    background-color: green;
     margin-top: 54px;
     height: calc(100vh - 54px);
 }
 
 .debug main .container-fluid{
-    background-color: blue;
-    height: 100%;
+    height: calc(100vh - 54px);
     width: calc(100% - 150px);
 }
 
@@ -55,10 +53,7 @@ main {
     height: 100px;
 }
 
-.ms_bottom_main {
-    background-color: #f8f9fa;
-    height: calc(100% - 125px);
-}
+
 
 .ms_class_avatar{
     width: 40px;
