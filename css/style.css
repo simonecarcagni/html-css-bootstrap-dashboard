@@ -2,6 +2,10 @@
     --ms-backgroud-grey: #e5e5e5;
 }
 
+html{
+    font-family: sans-serif;
+}
+
 .ms_bg_grey{
     background-color: var(--ms-backgroud-grey);
 }
@@ -10,4 +14,57 @@
     position: absolute;
     top: 100% !important;
     right: 0 !important; 
+}
+
+.debug aside{
+    background-color: #051e34;
+    height: 100%;
+    width: 150px;
+}
+
+main {
+    background-color: green;
+    margin-top: 54px;
+    height: calc(100vh - 54px);
+}
+
+.debug main .container-fluid{
+    background-color: blue;
+    height: 100%;
+    width: calc(100% - 150px);
+}
+
+.debug main .row {
+    background-color: green;
+}
+
+.debug aside .col-12{
+    width: calc(100% - 16px);
+    background-color: black;
+    height: 50px;
+}
+
+.ms_header_main{
+    background-color: #1b72e8;
+    height: 125px;
+    width: 100%;
+}
+
+.debug main .col-3{
+    background-color: black;
+    height: 100px;
+}
+
+.ms_bottom_main {
+    background-color: #f8f9fa;
+    height: calc(100% - 125px);
+}
+
+.ms_class_avatar{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/class-avatar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
