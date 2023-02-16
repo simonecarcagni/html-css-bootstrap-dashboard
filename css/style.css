@@ -1,22 +1,13 @@
-:root{
-    --ms-backgroud-grey: #e5e5e5;
-}
-
 html{
     font-family: sans-serif;
 }
 
-.ms_bg_grey{
-    background-color: var(--ms-backgroud-grey);
+.ms_bg_pill{
+    background-color: #165bba;
 }
 
-.dropstart .ms_dropdown{
-    position: absolute;
-    top: 100% !important;
-    right: 0 !important; 
-}
-
-.debug aside{
+aside{
+    background-image: url(../img/sidebar-bg.png);
     background-color: #051e34;
     height: 100%;
 }
@@ -26,48 +17,35 @@ main {
     height: calc(100vh - 54px);
 }
 
-.debug main .container-fluid{
+main .container-fluid{
     height: calc(100vh - 54px);
 }
 
-.debug main .row {
-    background-color: green;
+.offcanvas.offcanvas-end.show{
+    width: 600px;
 }
-
 
 .ms_header_main{
     background-color: #1b72e8;
-    height: 125px;
     width: 100%;
-}
-
-aside{
-    background-image: url(../img/sidebar-bg.png);
-}
-
-.debug main .col-3{
-    background-color: black;
-    height: 100px;
 }
 
 .ms_logo_small{
     display: none;
 }
 
-
-
 .ms_class_avatar{
     width: 40px;
     height: 40px;
-    background-image: url(../img/class-avatar.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
+.ms_hover_aside{
+    width: 100px;
+}
 
-
-
+ .ms_hover_aside:hover .ms_bg_op{
+    background-color: rgba(255, 255, 225, 0.3);
+}
 
 @media all and (max-width: 576px) {
     .ms_logo_small{
@@ -91,6 +69,23 @@ aside{
 
     main .container-fluid{
         width: calc(100% - 75px);
+    }
+
+    .ms_order_first{
+        order: 1;
+    }
+    .ms_order_third{
+        order: -1;
+    }
+    .ms_bc_none{
+        display: none;
+    }
+    .ms_bc_show{
+        display: block;
+    }
+
+    .ms_hover_aside{
+        width: 30px;
     }
 
 }
